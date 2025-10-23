@@ -57,7 +57,7 @@ Open the generated `index.html` in your browser to view the movie showcase.
 ```
 Movies_Project/
 ├── .env                       # Your api key
-├── movies.py                  # Main script with menu and logic
+├── app.py                  # Main script with menu and logic
 ├── index.html                 # Generated HTML (output)
 │
 ├── data/

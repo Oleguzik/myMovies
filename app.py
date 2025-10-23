@@ -199,12 +199,12 @@ def update_movie():
 def generate_website():
     """Generates a website displaying the list of movies."""
     # Read the template file
-    template_path = os.path.join("_static", "index_template.html")
+    template_path = os.path.join("static", "index_template.html")
     with open(template_path, "r") as template_file:
         template_content = template_file.read()
 
     # Replace placeholders
-    title = "My Movies App 🎬"
+    title = "🎬 My Movies App"
     movies = storage.list_movies()
     movie_grid = ""
     if not movies:
