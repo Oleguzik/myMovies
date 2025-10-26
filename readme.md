@@ -12,8 +12,11 @@ This app lets you load movies from a local database and visually present them in
 
 ## 🧩 Features
 
+- User profiles: each user has their own movie list
+- User selection and switching from the app menu
+- All movie actions (add, list, delete, update, filter, stats, website generation) are user-specific
 - Query or load movie data from a local database (`movies.db`)
-- HTML movie grid generation triggered by menu option 11
+- HTML movie grid generation triggered by menu option 8, saved as `<username>.html`
 - Custom HTML template with placeholders
 - Built-in CSS styling for visual layout
 - Modular code structure for data access and external API
@@ -41,10 +44,11 @@ API_KEY='your_api_key_here'
 From the root of the project:
 
 ```bash
-python movies.py
+python app.py
 ```
 
-You will be presented with a menu. Select option `8` to generate the HTML movie gallery.
+
+You will be presented with a menu. On first launch, select or create a user profile. All movie actions will be tied to the active user. Select option `8` to generate the HTML movie gallery for the current user (output will be `<username>.html`).
 
 ### 4. View the Output
 
@@ -57,7 +61,7 @@ Open the generated `index.html` in your browser to view the movie showcase.
 ```
 Movies_Project/
 ├── .env                       # Your api key
-├── app.py                  # Main script with menu and logic
+├── app.py                     # Main script with menu and logic
 ├── index.html                 # Generated HTML (output)
 │
 ├── data/
